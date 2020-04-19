@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@700&family=Exo+2:ital,wght@0,800;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="wt.css">
+    <title>main page</title>
+</head>
+<body>
+<div class="body">
+        <h1 class="text-white bg-dark"><center>form design</center></h1><br>
+        <h2>Introduction</h2><br>
+        <p>
+        HTML Forms are required, when you want to collect some data from the site visitor. For example, during user registration you would like to collect information such as name, email address, credit card, etc.
+        A form will take input from the site visitor and then will post it to a back-end application such as CGI, ASP Script or PHP script etc. The back-end application will perform required processing on the passed data based on defined business logic inside the application.
+        There are various form elements available like text fields, textarea fields, drop-down menus, radio buttons, checkboxes, etc.
+        </p>
+</div>
+
+<div class="body">
+        <p>
+                <h2>Form Attribute</h2>
+                <ol type="1">
+                    <dl>
+                        <li><dt>	
+                            Action
+                        </dt>
+                        <dd>
+                            -Backend script ready to process your passed data
+                        </dd></li>
+                        <li><dt>
+                            Method
+                        </dt>
+                        <dd>
+                            -Method to be used to upload data. The most frequently used are GET and POST methods
+                        </dd></li>
+                        <li><dt>
+                            Target
+                        </dt>
+                        <dd>
+                            -Specify the target window or frame where the result of the script will be displayed. It takes values like _blank, _self, _parent etc
+                        </dd></li>
+                        <li><dt>
+                            Enctype
+                        </dt>
+                        <dd>
+                            -You can use the enctype attribute to specify how the browser encodes the data before it sends it to the server
+                        </dd></li>
+                    </dl>
+                </ol>
+        </p>
+</div>
+
+<div class="body">
+                <h2>Form Control</h2>
+                <br>
+                <p>
+                There are different types of form controls that you can use to collect data using HTML form −
+                </p>
+                <ol type="1">
+                    <li>
+                        <h3>Text Input Controls</h3>
+                        <br>
+                        <p>
+                        These are are three types of text input used on forms −
+                        </p><ol type="a">
+                            <dl>
+                                <li>
+                                    <dt>
+                                        <b>Single-line text input controls</b>
+                                    </dt>
+                                    <dd>
+                                        <br>
+                                        <p>
+                                        This control is used for items that require only one line of user input, such as search boxes or names. They are created using HTML &lt; input &gt; tag.
+                                       </p> 
+                                        <p>
+                                        Following is the list of attributes for creating text field -</p>
+                                        <br>
+                                    
+                                        <div class="table" style="display:flex;justify-content: center;">
+                                        <table border="3px" cellspacing="2px;">
+                                            <tr>
+                                                <th>
+                                                    1. type
+                                                </th>
+                                                <th>
+                                                    Indicates the type of input control and for text input control it will be set to text.
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    2. name
+                                                </th>
+                                                <th>
+                                                    Used to give a name to the control which is sent to the server to be recognized and get the value.
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    3. value
+                                                </th>
+                                                <th>
+                                                    This can be used to provide an initial value inside the control.
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    4. size
+                                                </th>
+                                                <th>
+                                                    Allows to specify the width of the text-input control in terms of characters.
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    5. maxlength
+                                                </th>
+                                                <th>
+                                                    Allows to specify the maximum number of characters a user can enter into the text box.
+                                                </th>
+                                            </tr>
+                                        </table>
+                                        </div>
+                                    </dd>
+                                </li>
+                                <li>
+                                    <dt>
+                                        <b>Password- input controls</b>
+                                    </dt>
+                                    <dd>
+                                        <br>
+                                        <p>
+                                        This is also a single-line text input but it masks the character as soon as a user enters it. They are also created using HTML &lt; input &gt;tag but type attribute is set to password.
+                                        </p>
+                                        <p>
+                                        Following is the list of attributes for password field -</p>
+                                        <br>
+                                      
+                                        <div class="table" style="display:flex;justify-content: center;">
+                                        <table border="3px" cellspacing="2px;">	
+                                            <tr>
+                                                <th>
+                                                    1. type
+                                                </th>
+                                                <th>
+                                                    Indicates the type of input control and for password input control it will be set to password.
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    2. name
+                                                </th>
+                                                <th>
+                                                    Used to give a name to the control which is sent to the server to be recognized and get the value.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    3. value
+                                                </td>
+                                                <td>
+                                                    This can be used to provide an initial value inside the control.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    4. size
+                                                </td>
+                                                <td>
+                                                    Allows to specify the width of the text-input control in terms of characters.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    5. maxlength
+                                                </td>
+                                                <td>
+                                                    Allows to specify the maximum number of characters a user can enter into the text box.
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        </div>
+                                    </dd>
+                                </li>
+                                <li>
+                                    <dt>
+                                        <b>Multiple - line text input controls</b>
+                                    </dt>
+                                    <dd>
+                                        <br>
+                                        <p>
+                                        This is used when the user is required to give details that may be longer than a single sentence. Multi-line input controls are created using HTML &lt; textarea &gt; tag.
+                                       </p> 
+                                       <p> Following is the list of attributes for &lt; textarea &gt; tag -</p>
+                                       <br>
+                                        <div class="table" style="display:flex;justify-content: center;">
+                                        <table border="3px" cellspacing="2px;" >	
+                                            <tr>
+                                                <td>
+                                                    1. type
+                                                </td>
+                                                <td>
+                                                    Used to give a name to the control which is sent to the server to be recognized and get the value.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    2. rows
+                                                </td>
+                                                <td>
+                                                    Indicates the number of rows of text area box.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    3. cols
+                                                </td>
+                                                <td>
+                                                    Indicates the number of columns of text area box.
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        </div>
+                                    </dd>
+                                </li>
+                            </dl>
+                        </ol>
+                    </li>
+                    <li>
+                        <h3>Checkboxes Controls</h3>
+                        <br>
+                        <p>
+                        Checkboxes are used when more than one option is required to be selected. They are also created using HTML &lt; input &gt; tag but type attribute is set to checkbox.
+                       </p> 
+                      
+                        <p>
+                        Following is the list of attributes for checkbox tag -</p>
+                       
+                        <div class="table" style="display:flex;justify-content: center;">
+                        <table border="3px">	
+                            <tr cellpadding="10px">
+                                <th>
+                                    1. type
+                                </th>
+                                <th>
+                                    Indicates the type of input control and for checkbox input control it will be set to checkbox.
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    2. name
+                                </th>
+                                <th>
+                                    Used to give a name to the control which is sent to the server to be recognized and get the value.
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    3. value
+                                </th>
+                                <th>
+                                    The value that will be used if the checkbox is selected.
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    4. checked
+                                </th>
+                                <th>
+                                    Set to checked if you want to select it by default.
+                                </th>
+                            </tr>
+                        </table>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Radio Box Controls</h3>
+                        <br>
+                        <p>
+                        Radio buttons are used when out of many options, just one option is required to be selected. They are also created using HTML &lt; input &gt; tag but type attribute is set to radio.
+                    </p>  
+                        <p>
+                        Following is the list of attributes for radio button -</p>
+                        <br>
+                      
+                        <div class="table" style="display:flex;justify-content: center;">
+                        <table border="3px" cellspacing="2px;">	
+                            <tr>
+                                <th>
+                                    1. type
+                                </th>
+                                <th>
+                                    Indicates the type of input control and for checkbox input control it will be set to radio.
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    2. name
+                                </th>
+                                <th>
+                                    Used to give a name to the control which is sent to the server to be recognized and get the value.
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    3. value
+                                </th>
+                                <th>
+                                    The value that will be used if the radio box is selected.
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    4. checked
+                                </th>
+                                <th>
+                                    Set to checked if you want to select it by default.
+                                </th>
+                            </tr>
+                        </table>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Select Box Controls</h3>
+                        <br><p>
+                        A select box, also called drop down box which provides option to list down various options in the form of drop down list, from where a user can select one or more options.
+                     </p>   
+                        
+                        <p>
+                        Following is the list of important attributes of &lt; select &gt; tag −</p>
+                     
+                        <div class="table" style="display:flex;justify-content: center;">
+                        <table border="3px" cellspacing="2px;">	
+                            <tr>
+                                <th>
+                                    1. name
+                                </th>
+                                <th>
+                                    Used to give a name to the control which is sent to the server to be recognized and get the value.
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    2. size
+                                </th>
+                                <th>
+                                    This can be used to present a scrolling list box.
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    3. multiple
+                                </th>
+                                <th>
+                                    If set to &quot;multiple&quot; then allows a user to select multiple items from the menu.
+                                </th>
+                            </tr>
+                        </table>
+                        </div>
+                        <br>
+                        <br>
+                        <p>
+                        Following is the list of important attributes of &lt; option &gt; tag −</p>
+                        <br>
+                        <br>
+                        <div class="table" style="display:flex;justify-content: center;">
+                        <table border="3px" cellspacing="2px;">	
+                            <tr>
+                                <th>
+                                    1. value
+                                </th>
+                                <th>
+                                    The value that will be used if an option in the select box box is selected.
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    2. selected
+                                </th>
+                                <th>
+                                    Specifies that this option should be the initially selected value when the page loads.
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    3. label
+                                </th>
+                                <th>
+                                    An alternative way of labeling options
+                                </th>
+                            </tr>
+                        </table>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Submit and Reset Button</h3>
+                        <br>
+                        <p>
+                        There are various ways in HTML to create clickable buttons. You can also create a clickable button using &lt; input &gt;tag by setting its type attribute to button. The type attribute can take the following values −
+                       </p> <br>
+                       
+                        <div class="table" style="display:flex;justify-content: center;">
+                        <table border="3px" cellspacing="2px;">	
+                            <tr>
+                                <th>
+                                    1. submit
+                                </th>
+                                <th>
+                                    This creates a button that automatically submits a form.
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    2. reset
+                                </th>
+                                <th>
+                                    This creates a button that automatically resets form controls to their initial values.
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    3. button
+                                </th>
+                                <th>
+                                    This creates a button that is used to trigger a client-side script when the user clicks that button
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    4. image
+                                </th>
+                                <th>
+                                    This creates a clickable button but we can use an image as background of the button.
+                                </th>
+                            </tr>
+                        </table>
+                        </div>
+                    </li>
+                </ol>
+            
+            <h2>Example</h2>
+                <br>
+            <a href="s.html">click here to view form</a>
+            <br>
+</div>
+
+<div class="body">
+        <h1 class="text-white bg-dark"><center>Frame</center></h1>
+        <br>
+       
+            <h2>Introduction</h2>
+            <br>
+            <p>
+            HTML frames are used to divide your browser window into multiple sections where each section can load a separate HTML document. A collection of frames in the browser window is known as a frameset. The window is divided into frames in a similar way the tables are organized: into rows and columns.
+        </p>
+       
+            <h2>Creating Frame </h2>
+            <br>
+            <p>
+            To use frames on a page we use &lt; frameset &gt; tag instead of &lt; body &gt; tag. The &lt; frameset &gt; tag defines, how to divide the window into frames. The rows attribute of &lt; frameset &gt; tag defines horizontal frames and cols attribute defines vertical frames. Each frame is indicated by &lt; frame &gt; tag and it defines which HTML document shall open into the frame.
+            <br>
+        </p>
+        <p>
+        Following are important attributes of the &lt; frameset &gt; tag −
+                    </p>
+                    
+                    <table border="3px" class="text-dark">	
+                        <tr>
+                            <th>
+                                1. type
+                            </th>
+                            <th>
+                                Specifies how many columns are contained in the frameset and the size of each column. You can specify the width of each column in one of the four ways −
+                                <br>
+                                Absolute values in pixels. For example, to create three vertical frames, use cols = &quot;100, 500, 100&quot;.
+                                <br>
+                                A percentage of the browser window. For example, to create three vertical frames, use cols = &quot;10%, 80%, 10%&quot;.
+                                <br>
+                                Using a wildcard symbol. For example, to create three vertical frames, use cols = &quot;10%, *, 10%&quot;. In this case wildcard takes remainder of the window.
+                                <br>
+                                As relative widths of the browser window. For example, to create three vertical frames, use cols = &quot;3*, 2*, 1*&quot;. This is an alternative to percentages. You can use relative widths of the browser window. Here the window is divided into sixths: the first column takes up half of the window, the second takes one third, and the third takes one sixth.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                2. rows
+                            </th>
+                            <th>
+                                This attribute works just like the cols attribute and takes the same values, but it is used to specify the rows in the frameset. For example, to create two horizontal frames, use rows = &quot;10%, 90%&quot;. You can specify the height of each row in the same way as explained above for columns.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                3. border
+                            </th>
+                            <th>
+                                This attribute specifies the width of the border of each frame in pixels. For example, border = &quot;5&quot;. A value of zero means no border.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                4.frameborder
+                            </th>
+                            <th>
+                                This attribute specifies whether a three-dimensional border should be displayed between frames. This attribute takes value either 1 (yes) or 0 (no). For example frameborder = &quot;0&quot; specifies no border.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                5.framespacing
+                            </th>
+                            <th>
+                                This attribute specifies the amount of space between frames in a frameset. This can take any integer value. For example framespacing = &quot;10&quot; means there should be 10 pixels spacing between each frames.
+                            </th>
+                        </tr>
+                    </table>
+        <p><br>
+        Following are the important attributes of &lt; frame &gt; tag −</p>
+        
+        <table  class="text-dark" border="3px">	
+                        <tr>
+                            <th>
+                                1. src
+                            </th>
+                            <th>
+                                This attribute is used to give the file name that should be loaded in the frame. Its value can be any URL. For example, src = &quot;/html/top_frame.htm&quot; will load an HTML file available in html directory.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                2. name
+                            </th>
+                            <th>
+                                This attribute allows you to give a name to a frame. It is used to indicate which frame a document should be loaded into. This is especially important when you want to create links in one frame that load pages into an another frame, in which case the second frame needs a name to identify itself as the target of the link.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                3. frameborder
+                            </th>
+                            <th>
+                                This attribute specifies whether or not the borders of that frame are shown; it overrides the value given in the frameborder attribute on the &lt; frameset &gt; tag if one is given, and this can take values either 1 (yes) or 0 (no).
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                4.marginwidth
+                            </th>
+                            <th>
+                                This attribute allows you to specify the width of the space between the left and right of the frame&#39;s borders and the frame&#39;s content. The value is given in pixels. For example marginwidth = &quot;10&quot;.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                5.marginheight
+                            </th>
+                            <th>
+                                This attribute allows you to specify the height of the space between the top and bottom of the frame&#39;s borders and its contents. The value is given in pixels. For example marginheight = &quot;10&quot;.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                6.noresize
+                            </th>
+                            <th>
+                                By default, you can resize any frame by clicking and dragging on the borders of a frame. The noresize attribute prevents a user from being able to resize the frame. For example noresize = &quot;noresize&quot;.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                7.scrolling
+                            </th>
+                            <th>
+                                This attribute controls the appearance of the scrollbars that appear on the frame. This takes values either &quot;yes&quot;, &quot;no&quot; or &quot;auto&quot;. For example scrolling = &quot;no&quot; means it should not have scroll bars.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                8.longdesc
+                            </th>
+                            <th>
+                                This attribute allows you to provide a link to another page containing a long description of the contents of the frame. For example longdesc = &quot;framedescription.htm&quot;.
+                            </th>
+                        </tr>
+                    </table>
+                    <br>
+                    <p>
+        The targetattribute can also take one of the following values −</p>
+<br>
+        <table  class="text-dark" border="3px">	
+            <tr>
+                <th>
+                    1. _self
+                </th>
+                <th>
+                    Loads the page into the current frame.
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    2. _blank
+                </th>
+                <th>
+                    Loads a page into a new browser window. Opening a new window.
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    3. _parent
+                </th>
+                <th>
+                    Loads the page into the parent window, which in the case of a single frameset is the main browser window.
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    4._top
+                </th>
+                <th>
+                    Loads the page into the browser window, replacing any current frames.
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    5.targetframe
+                </th>
+                <th>
+                    Loads the page into a named targetframe.
+                </th>
+            </tr>
+        </table>
+    <h2><u>Example</u></h2>
+    <br>
+    <h2>
+    <a href="frame.html"> Following is the website including Frama and Frameset.</a>
+    </h2>
+    <br>
+</div>
+
+<div class="body">
+
+    
+        <h1 class="text-white bg-dark"><center>Cascading Style Sheets</center></h1>
+        <br>
+ 
+            <h2>Introduction</h2>
+            <br>
+            <p>
+            Cascading Style Sheets (CSS) describe how documents are presented on screens, in print, or perhaps how they are pronounced. W3C has actively promoted the use of style sheets on the Web since the consortium was founded in 1994.
+           
+            Cascading Style Sheets (CSS) provide easy and effective alternatives to specify various attributes for the HTML tags. Using CSS, you can specify a number of style properties for a given HTML element. Each property has a name and a value, separated by a colon (:). Each property declaration is separated by a semi-colon (;).
+         
+        </p>
+        <p>
+            <h2>Types of CSS</h2>
+            <ol type="1">
+                <dl>
+                    <li>
+                        <dt>External Style Sheet</dt>
+                        <dd>
+                            If you need to use your style sheet to various pages, then its always recommended to define a common style sheet in a separate file. A cascading style sheet file will have extension as .css and it will be included in HTML files using &lt; link &gt; tag.
+                            <br>
+                            Eg.:-
+                            <br>
+                        </dd>
+                    </li>
+                    <li>
+                        <dt>
+                            Internal Style Sheet
+                        </dt>
+                        <dd>
+                            If you want to apply Style Sheet rules to a single document only, then you can include those rules in header section of the HTML document using &lt; style &gt; tag.
+                            <br>
+                            Rules defined in internal style sheet overrides the rules defined in an external CSS file.
+                            <br>
+                            Eg.:-
+                            <br>
+                        </dd>
+                    </li>
+                    <li>
+                        <dt>
+                            Inline Style Sheet
+                        </dt>
+                        <dd>
+                            You can apply style sheet rules directly to any HTML element using style attribute of the relevant tag. This should be done only when you are interested to make a particular change in any HTML element only.
+                            <br>
+                            Rules defined inline with the element overrides the rules defined in an external CSS file as well as the rules defined in &lt; style &gt; element.
+                            <br>
+                            Eg.:-
+                            <br>
+                        </dd>
+                    </li>
+                </dl>
+            </ol>
+        </p>
+
+</div>
+</body>
+</html>
+
+
+
+       
+      
