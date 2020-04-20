@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@700&family=Exo+2:ital,wght@0,800;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="wt.css">
+    <title>css page</title>
+</head>
+<body>
+
+    
+<div class="body">
+
+    
+        <h1 class="text-white bg-dark"><center>Cascading Style Sheets</center></h1>
+        <br>
+ 
+            <h2>Introduction</h2>
+            <br>
+            <p>
+            Cascading Style Sheets (CSS) describe how documents are presented on screens, in print, or perhaps how they are pronounced. W3C has actively promoted the use of style sheets on the Web since the consortium was founded in 1994.
+           
+            Cascading Style Sheets (CSS) provide easy and effective alternatives to specify various attributes for the HTML tags. Using CSS, you can specify a number of style properties for a given HTML element. Each property has a name and a value, separated by a colon (:). Each property declaration is separated by a semi-colon (;).
+         
+        </p>
+        <p>
+            <h2>Types of CSS</h2>
+            <ol type="1">
+                <dl>
+                    <li>
+                        <dt>External Style Sheet</dt>
+                        <dd>
+                            If you need to use your style sheet to various pages, then its always recommended to define a common style sheet in a separate file. A cascading style sheet file will have extension as .css and it will be included in HTML files using &lt; link &gt; tag.
+                            <br>
+                            Eg.:-
+                            <br>
+                        </dd>
+                        <!--......................example .....................-->
+                        <p>
+                            <label><strong>EXAMPLE</strong></label>
+                            we use <u>link tag</u> to link external css page to our html page.
+                            <br>
+                            syntax:<u> 
+
+                                link rel="stylesheet" href="sdfs.css"></u> 
+                                <strong>in head tag</strong>
+                        </p>
+                        <!--......................example .....................-->
+
+                    </li>
+                    <li>
+                        <dt>
+                            Internal Style Sheet
+                        </dt>
+                        <dd>
+                            If you want to apply Style Sheet rules to a single document only, then you can include those rules in header section of the HTML document using &lt; style &gt; tag.
+                            <br>
+                            Rules defined in internal style sheet overrides the rules defined in an external CSS file.
+                            <br>
+                            Eg.:-
+                            <br>
+                        </dd>
+
+                                                <!--......................example .....................-->
+                            <p>
+ <!--......................example .....................-->
+ <p>
+        <label><strong>EXAMPLE</strong></label>
+        we use <u>style tag</u> to use internal css  to our html page.
+    
+        <br>
+        syntax:<u> 
+        style><br>
+                p{
+                    background-color:red;
+                }
+                /style>
+           </u> <br>
+
+            <strong>in head tag</strong>
+    </p>
+                                </p>
+                                                <!--......................example .....................-->
+
+                    </li>
+                    <li>
+                        <dt>
+                            Inline Style Sheet
+                        </dt>
+                        <dd>
+                            You can apply style sheet rules directly to any HTML element using style attribute of the relevant tag. This should be done only when you are interested to make a particular change in any HTML element only.
+                            <br>
+                            Rules defined inline with the element overrides the rules defined in an external CSS file as well as the rules defined in &lt; style &gt; element.
+                            <br>
+                            Eg.:-
+                            <br>
+                        </dd>
+                           <!--......................example .....................-->
+                         <p>
+                                we use <u>style tag with html tag </u> to use inline css  to our html page.
+    
+                                <br>
+                                syntax:<u> 
+                                    p style : background-color: red 
+                                </u>
+                                    <strong>with head tag</strong>
+                        
+                        </p>
+                               <!--......................example .....................-->
+                                            
+                    </li>
+                </dl>
+            </ol>
+        </p>
+
+</div>
+</body>
+</html>
+
+

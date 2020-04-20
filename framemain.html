@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@700&family=Exo+2:ital,wght@0,800;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="wt.css">
+    <title>frame  page</title>
+</head>
+<body>
+
+    
+<div class="body">
+        <h1 class="text-white bg-dark"><center>Frame</center></h1>
+        <br>
+       
+            <h2>Introduction</h2>
+            <br>
+            <p>
+            HTML frames are used to divide your browser window into multiple sections where each section can load a separate HTML document. A collection of frames in the browser window is known as a frameset. The window is divided into frames in a similar way the tables are organized: into rows and columns.
+        </p>
+       
+            <h2>Creating Frame </h2>
+            <br>
+            <p>
+            To use frames on a page we use &lt; frameset &gt; tag instead of &lt; body &gt; tag. The &lt; frameset &gt; tag defines, how to divide the window into frames. The rows attribute of &lt; frameset &gt; tag defines horizontal frames and cols attribute defines vertical frames. Each frame is indicated by &lt; frame &gt; tag and it defines which HTML document shall open into the frame.
+            <br>
+        </p>
+        <p>
+        Following are important attributes of the &lt; frameset &gt; tag −
+                    </p>
+                    
+                    <table border="3px" class="text-dark">	
+                        <tr>
+                            <th>
+                                1. type
+                            </th>
+                            <th>
+                                Specifies how many columns are contained in the frameset and the size of each column. You can specify the width of each column in one of the four ways −
+                                <br>
+                                Absolute values in pixels. For example, to create three vertical frames, use cols = &quot;100, 500, 100&quot;.
+                                <br>
+                                A percentage of the browser window. For example, to create three vertical frames, use cols = &quot;10%, 80%, 10%&quot;.
+                                <br>
+                                Using a wildcard symbol. For example, to create three vertical frames, use cols = &quot;10%, *, 10%&quot;. In this case wildcard takes remainder of the window.
+                                <br>
+                                As relative widths of the browser window. For example, to create three vertical frames, use cols = &quot;3*, 2*, 1*&quot;. This is an alternative to percentages. You can use relative widths of the browser window. Here the window is divided into sixths: the first column takes up half of the window, the second takes one third, and the third takes one sixth.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                2. rows
+                            </th>
+                            <th>
+                                This attribute works just like the cols attribute and takes the same values, but it is used to specify the rows in the frameset. For example, to create two horizontal frames, use rows = &quot;10%, 90%&quot;. You can specify the height of each row in the same way as explained above for columns.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                3. border
+                            </th>
+                            <th>
+                                This attribute specifies the width of the border of each frame in pixels. For example, border = &quot;5&quot;. A value of zero means no border.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                4.frameborder
+                            </th>
+                            <th>
+                                This attribute specifies whether a three-dimensional border should be displayed between frames. This attribute takes value either 1 (yes) or 0 (no). For example frameborder = &quot;0&quot; specifies no border.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                5.framespacing
+                            </th>
+                            <th>
+                                This attribute specifies the amount of space between frames in a frameset. This can take any integer value. For example framespacing = &quot;10&quot; means there should be 10 pixels spacing between each frames.
+                            </th>
+                        </tr>
+                    </table>
+        <p><br>
+        Following are the important attributes of &lt; frame &gt; tag −</p>
+        
+        <table  class="text-dark" border="3px">	
+                        <tr>
+                            <th>
+                                1. src
+                            </th>
+                            <th>
+                                This attribute is used to give the file name that should be loaded in the frame. Its value can be any URL. For example, src = &quot;/html/top_frame.htm&quot; will load an HTML file available in html directory.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                2. name
+                            </th>
+                            <th>
+                                This attribute allows you to give a name to a frame. It is used to indicate which frame a document should be loaded into. This is especially important when you want to create links in one frame that load pages into an another frame, in which case the second frame needs a name to identify itself as the target of the link.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                3. frameborder
+                            </th>
+                            <th>
+                                This attribute specifies whether or not the borders of that frame are shown; it overrides the value given in the frameborder attribute on the &lt; frameset &gt; tag if one is given, and this can take values either 1 (yes) or 0 (no).
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                4.marginwidth
+                            </th>
+                            <th>
+                                This attribute allows you to specify the width of the space between the left and right of the frame&#39;s borders and the frame&#39;s content. The value is given in pixels. For example marginwidth = &quot;10&quot;.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                5.marginheight
+                            </th>
+                            <th>
+                                This attribute allows you to specify the height of the space between the top and bottom of the frame&#39;s borders and its contents. The value is given in pixels. For example marginheight = &quot;10&quot;.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                6.noresize
+                            </th>
+                            <th>
+                                By default, you can resize any frame by clicking and dragging on the borders of a frame. The noresize attribute prevents a user from being able to resize the frame. For example noresize = &quot;noresize&quot;.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                7.scrolling
+                            </th>
+                            <th>
+                                This attribute controls the appearance of the scrollbars that appear on the frame. This takes values either &quot;yes&quot;, &quot;no&quot; or &quot;auto&quot;. For example scrolling = &quot;no&quot; means it should not have scroll bars.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                8.longdesc
+                            </th>
+                            <th>
+                                This attribute allows you to provide a link to another page containing a long description of the contents of the frame. For example longdesc = &quot;framedescription.htm&quot;.
+                            </th>
+                        </tr>
+                    </table>
+                    <br>
+                    <p>
+        The targetattribute can also take one of the following values −</p>
+<br>
+        <table  class="text-dark" border="3px">	
+            <tr>
+                <th>
+                    1. _self
+                </th>
+                <th>
+                    Loads the page into the current frame.
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    2. _blank
+                </th>
+                <th>
+                    Loads a page into a new browser window. Opening a new window.
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    3. _parent
+                </th>
+                <th>
+                    Loads the page into the parent window, which in the case of a single frameset is the main browser window.
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    4._top
+                </th>
+                <th>
+                    Loads the page into the browser window, replacing any current frames.
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    5.targetframe
+                </th>
+                <th>
+                    Loads the page into a named targetframe.
+                </th>
+            </tr>
+        </table>
+    <h2><u>Example</u></h2>
+    <br>
+    <h2>
+    <a href="frame.html"> Following is the website including Frama and Frameset.</a>
+    </h2>
+    <br>
+</div>
+
+</body>
+</html>
